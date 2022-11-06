@@ -28,6 +28,8 @@ dependencies {
     // Ktor
     implementation("io.ktor:ktor-server-core-jvm:$ktor_version")
     implementation("io.ktor:ktor-server-netty-jvm:$ktor_version")
+    implementation("io.ktor:ktor-client-core:$ktor_version")
+    implementation("io.ktor:ktor-client-cio:$ktor_version")
 
     //Koin for dependency injection
     implementation("io.insert-koin:koin-ktor:$koin_version")
@@ -35,6 +37,9 @@ dependencies {
 
     // Mongo
     implementation("org.litote.kmongo:kmongo-coroutine:$kmongo_version")
+
+    // Mail
+    implementation("org.apache.commons:commons-email:1.5")
 
     // Serialization
     implementation("io.ktor:ktor-server-content-negotiation:$ktor_version")

@@ -11,6 +11,10 @@ fun Application.customerRoutes() {
 
     val repo: CustomerRepository = CustomerRepositoryImpl()
     val service: CustomerService = CustomerServiceImpl(repo)
+//
+//    val notificationManager = NotificationManagerImpl()
+//    val emailSender = EmailNotificationSender(EmailServiceImpl())
+//    notificationManager.registerNotificationSender(emailSender)
 
     routing {
         route("/customer") {

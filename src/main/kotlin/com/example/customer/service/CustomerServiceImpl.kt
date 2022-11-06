@@ -7,8 +7,7 @@ import com.example.customer.repository.CustomerRepository
 import java.time.LocalDateTime
 
 class CustomerServiceImpl(
-    private val repository: CustomerRepository,
-    private val emailService: CustomerService
+    private val repository: CustomerRepository
     ) : CustomerService {
 
     override suspend fun findAll(): List<CustomerDto> {
